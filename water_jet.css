@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #0C0C12;
+    font-family: 'Rubik';
+    color: aliceblue;
+    scroll-snap-type: y;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.page {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out, background-color 0.2s ease-in-out; /* Add background-color transition */
+    background-color: transparent; /* Set initial background color */
+}
+#page1, #page4 {
+    background-image: url(img/Web\ 1920\ –\ Page\ 1\ –\ 1@2x.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#page2 {
+    background-image: url(img/Web\ 1920\ –\ Page\ 1@2x.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#page3 {
+    background-image: url(img/Web\ 1920\ –\ Background\ 3.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+  
+/* PRELOADING */
+.page.visible {
+    opacity: 1;
+    background-color: #0C0C12; /* Set the desired background color */
+}
+  
+/* CSS code for preloader styling */
+[data-aos="preload"] {
+    opacity: 0;
+    transition-property: opacity;
+  
+ &.aos-animate {
+    opacity: 1;
+}
+}
+  
+.preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: scale(100%);
+    z-index: 9999;
+    transition: opacity 0.3s ease-in, background-color 0.3s ease-in; /* Add transition property for background-color */
+    opacity: 1; /* Set initial opacity to 1 */
+    pointer-events: auto; /* Enable pointer events to allow interaction with preloader */
+}
+/* PRELOADING-END */
+
+/* CONTENTS */
+
+/* PAGE 1 */
+#page1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    padding: 10px;
+}
+.cage1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    box-sizing: border-box;
+    height: 92vh;
+    width: 98%;
+    padding: 15px 30px 15px 30px;
+}
+.left-cosmetic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    width: auto;
+    margin: 10px 20px 10px 20px;
+    border-radius: 5px;
+}
+.square_up, .square_down {
+    height: 30px;
+    width: 30px;
+    background-color: #FFFEF8;
+    border-radius: 4px;
+    opacity: 0; /* initially hidden */
+    transition: opacity 0.5s ease-in-out; /* for fade-in effect */
+}
+
+.line_1 {
+    height: 100%;
+    width: 15px;
+    margin: 30px 20px 30px 20px;
+    border-radius: 4px;
+    background-color: #FFFEF8;
+    transform: scaleY(0); /* initially hidden */
+    transform-origin: center; /* for stretching from center */
+    transition: transform 1s ease-in-out; /* for stretching effect */
+}
+.line_2 {
+    height: 50vh;
+    width: 5px;
+    margin: 30px 20px 30px 20px;
+    border-radius: 4px;
+    background-color: #FFFEF8;
+}
+.page1 {
+    display: none; /* initially hidden */
+}
+
+/* Keyframes for animations */
+@keyframes fadeUpIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px); /* initial position */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeDownIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px); /* initial position */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes stretchIn {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}
+@keyframes glowAnimation {
+    0% {
+        box-shadow: 0 0 0px 0px #FFFEF8;
+    }
+    50% {
+        box-shadow: 0 0 15px 2px rgba(229, 224, 190, 0.227); /* Adjust glow effect */
+    }
+    100% {
+        box-shadow: 0 0 0px 0px #FFFEF8;
+    }
+}
+
+/* Alternate back and forth animation */
+.logo1.alternateMove {
+    animation: alternateMove 2s ease-in-out infinite alternate;
+}
+
+@keyframes alternateMove {
+    0%, 100% {
+        transform: translateX(0); /* Starting and ending position */
+    }
+    50% {
+        transform: translateX(-35px); /* Midpoint position */
+    }
+}
+
+.separator1 {
+    height: 70vh;
+    width: 10vw;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.content1 {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    height: 70vh;
+    width: 90%;
+    padding: 20px;
+    margin: 10px;
+}
+.title1_1 {
+    font-family: 'Rubik';
+    font-size: 120px;
+    font-weight: 600;
+    color: #FFFEF8;
+    letter-spacing: 3px;
+    text-shadow: 0px 0px 14px rgb(116, 131, 131, 0.5);
+}
+.title1_2 {
+    font-size: 80px;
+    font-weight: 600;
+    color: rgb(111, 192, 192);
+    text-shadow: 0px 0px 14px rgb(116, 131, 131, 0.2);
+
+}
+.subtitle1_1 {
+    font-weight: 400;
+    padding: 9px 28px 9px 28px;
+    border-radius: 10px;
+    border: solid 2px #FFF3D1;
+    font-size: 20px;
+    transition: box-shadow 0.1s ease-in-out, border 0.1s ease-in-out, background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+}
+.subtitle1_1:hover {
+    background-color: #FFF3D1;
+    color: #0C0C12;
+    border: solid 2px #FFF3D1;
+    box-shadow: 0 0 10px 4px #fff3d13f;
+}
+.disclaimer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    font-size: 20px;
+    font-weight: 300;
+ 
+}
+.disclaim_txt {
+    margin-left: 15px;
+
+}
+.container_page1 {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.loading-bar {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: last baseline;
+    margin: 10px;
+    height: 50px;
+    width: 98%;
+}
+.bar, .bar1, .bar2 {
+    margin-left: 25px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.fade-inBar {
+    opacity: 1;
+}
+.fade-outBar {
+    opacity: 0;
+}
+/* PAGE 1 - END */
+
+/* PAGE 2 */
+.cage2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    border: solid 2px white;
+}
+.content2_1 {
+    display: flex;
+    height: 30vh;
+    width: 100%;
+    margin-bottom: 10px;
+    border: solid 2px white;
+    align-items: center;
+    justify-content: center;
+}
+.content2_2 {
+    height: 70vh;
+    width: 100%;
+    margin-top: 10px;
+    border: solid 2px white;    
+}
+/* PAGE 2 - END */
