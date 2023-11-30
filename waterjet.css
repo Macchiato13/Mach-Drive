@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #6683a0;
+    font-family: 'Rubik';
+    color: antiquewhite;
+    scroll-snap-type: y;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.page {
+    height: 100vh;
+    width: 100%;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out, background-color 0.4s ease-in-out; /* Add background-color transition */
+    background-color: transparent; /* Set initial background color */
+}
+.page.visible {
+    opacity: 1;
+    background-color: #6683a0; /* Set the desired background color */
+}
+.preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    transition: opacity 0.8s ease-in; /* Add transition property */
+    opacity: 1; /* Set initial opacity to 1 */
+    pointer-events: auto; /* Enable pointer events to allow interaction with preloader */
+}
+[data-aos="prelude"] {
+    opacity: 0;
+    transition-property: opacity;
+  
+    &.aos-animate {
+      opacity: 1;
+    }
+}
+
+#page1 {
+    display: flex;
+    flex-direction: column;
+}

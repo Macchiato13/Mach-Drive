@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aos-master/aos-master/dist/aos.css"/>
+    <link rel="stylesheet" type="text/css" href="water_jet.css">
+    <title>Water-Jet Cutting | Education</title>
+</head>
+<body>
+    <!------- Preload ------->
+    <div id="preloader" class="preloader">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+            <defs>
+              <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+                <stop offset="0" stop-color="#3a3a59"/>
+                <stop offset="1" stop-color="#0c0c12"/>
+              </radialGradient>
+              <filter id="Main_Triangle" x="709" y="316" width="503" height="460" filterUnits="userSpaceOnUse">
+                <feOffset input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="30" result="blur"/>
+                <feFlood flood-color="#57c5ce" flood-opacity="0.4"/>
+                <feComposite operator="in" in2="blur"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <filter id="Line_1" x="92.152" y="-54.5" width="715.196" height="1188.833" filterUnits="userSpaceOnUse">
+                <feOffset input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="10" result="blur-2"/>
+                <feFlood flood-color="#55d5d9" flood-opacity="0.259"/>
+                <feComposite operator="in" in2="blur-2"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <filter id="Line_2" x="92.152" y="-54.5" width="715.196" height="1188.833" filterUnits="userSpaceOnUse">
+                <feOffset input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="10" result="blur-3"/>
+                <feFlood flood-color="#55d5d9" flood-opacity="0.259"/>
+                <feComposite operator="in" in2="blur-3"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <filter id="Line_5" x="-32.598" y="-38.5" width="715.196" height="1188.833" filterUnits="userSpaceOnUse">
+                <feOffset input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="10" result="blur-4"/>
+                <feFlood flood-color="#55d5d9" flood-opacity="0.259"/>
+                <feComposite operator="in" in2="blur-4"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <filter id="Line_1-2" x="1113.652" y="-54.417" width="715.196" height="1188.833" filterUnits="userSpaceOnUse">
+                <feOffset input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="10" result="blur-5"/>
+                <feFlood flood-color="#55d5d9" flood-opacity="0.259"/>
+                <feComposite operator="in" in2="blur-5"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <filter id="Line_2-2" x="1113.652" y="-54.417" width="715.196" height="1188.833" filterUnits="userSpaceOnUse">
+                <feOffset input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="10" result="blur-6"/>
+                <feFlood flood-color="#55d5d9" flood-opacity="0.259"/>
+                <feComposite operator="in" in2="blur-6"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <filter id="Line_6" x="1237.402" y="-43.417" width="715.196" height="1188.833" filterUnits="userSpaceOnUse">
+                <feOffset input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="10" result="blur-7"/>
+                <feFlood flood-color="#55d5d9" flood-opacity="0.259"/>
+                <feComposite operator="in" in2="blur-7"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <filter id="Line_3" x="-30" y="97" width="1980" height="66" filterUnits="userSpaceOnUse">
+                <feOffset input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="10" result="blur-8"/>
+                <feFlood flood-color="#55d5d9" flood-opacity="0.259"/>
+                <feComposite operator="in" in2="blur-8"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <filter id="Line_4" x="-30" y="929" width="1980" height="66" filterUnits="userSpaceOnUse">
+                <feOffset input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="10" result="blur-9"/>
+                <feFlood flood-color="#55d5d9" flood-opacity="0.259"/>
+                <feComposite operator="in" in2="blur-9"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <filter id="Path_4" x="385" y="316" width="503" height="460" filterUnits="userSpaceOnUse">
+                <feOffset input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="30" result="blur-10"/>
+                <feFlood flood-color="#8989d4" flood-opacity="0.369"/>
+                <feComposite operator="in" in2="blur-10"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <filter id="Path_11" x="1033" y="316" width="503" height="460" filterUnits="userSpaceOnUse">
+                <feOffset input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="30" result="blur-11"/>
+                <feFlood flood-color="#8989d4" flood-opacity="0.369"/>
+                <feComposite operator="in" in2="blur-11"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <filter id="Path_6" x="547" y="597" width="503" height="460" filterUnits="userSpaceOnUse">
+                <feOffset input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="30" result="blur-12"/>
+                <feFlood flood-color="#8989d4" flood-opacity="0.369"/>
+                <feComposite operator="in" in2="blur-12"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <filter id="Path_12" x="871" y="597" width="503" height="460" filterUnits="userSpaceOnUse">
+                <feOffset input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="30" result="blur-13"/>
+                <feFlood flood-color="#8989d4" flood-opacity="0.369"/>
+                <feComposite operator="in" in2="blur-13"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <filter id="Path_9" x="547" y="35" width="503" height="460" filterUnits="userSpaceOnUse">
+                <feOffset input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="30" result="blur-14"/>
+                <feFlood flood-color="#8989d4" flood-opacity="0.369"/>
+                <feComposite operator="in" in2="blur-14"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <filter id="Path_8" x="871" y="35" width="503" height="460" filterUnits="userSpaceOnUse">
+                <feOffset input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="30" result="blur-15"/>
+                <feFlood flood-color="#8989d4" flood-opacity="0.369"/>
+                <feComposite operator="in" in2="blur-15"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <filter id="Path_14" x="709" y="-246" width="503" height="460" filterUnits="userSpaceOnUse">
+                <feOffset input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="30" result="blur-16"/>
+                <feFlood flood-color="#3955ae"/>
+                <feComposite operator="in" in2="blur-16"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <filter id="Path_15" x="223" y="597" width="503" height="460" filterUnits="userSpaceOnUse">
+                <feOffset input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="30" result="blur-17"/>
+                <feFlood flood-color="#3955ae"/>
+                <feComposite operator="in" in2="blur-17"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <filter id="Path_16" x="1195" y="597" width="503" height="460" filterUnits="userSpaceOnUse">
+                <feOffset input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="30" result="blur-18"/>
+                <feFlood flood-color="#3955ae"/>
+                <feComposite operator="in" in2="blur-18"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <filter id="Path_17" x="1195" y="-245" width="826" height="740" filterUnits="userSpaceOnUse">
+                <feOffset input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="30" result="blur-19"/>
+                <feFlood flood-color="#fffef8" flood-opacity="0.451"/>
+                <feComposite operator="in" in2="blur-19"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <filter id="Path_19" x="1520" y="317" width="826" height="740" filterUnits="userSpaceOnUse">
+                <feOffset input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="30" result="blur-20"/>
+                <feFlood flood-color="#fffef8" flood-opacity="0.451"/>
+                <feComposite operator="in" in2="blur-20"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <filter id="Path_27" x="224" y="878" width="826" height="740" filterUnits="userSpaceOnUse">
+                <feOffset input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="30" result="blur-21"/>
+                <feFlood flood-color="#fffef8" flood-opacity="0.451"/>
+                <feComposite operator="in" in2="blur-21"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <filter id="Path_23" x="-101" y="316" width="826" height="740" filterUnits="userSpaceOnUse">
+                <feOffset input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="30" result="blur-22"/>
+                <feFlood flood-color="#fffef8" flood-opacity="0.451"/>
+                <feComposite operator="in" in2="blur-22"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <filter id="Path_24" x="223.5" y="-246" width="826" height="740" filterUnits="userSpaceOnUse">
+                <feOffset input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="30" result="blur-23"/>
+                <feFlood flood-color="#fffef8" flood-opacity="0.451"/>
+                <feComposite operator="in" in2="blur-23"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <filter id="Main_Triangle-2" x="1033" y="973" width="503" height="460" filterUnits="userSpaceOnUse">
+                <feOffset input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="30" result="blur-24"/>
+                <feFlood flood-color="#57c5ce" flood-opacity="0.4"/>
+                <feComposite operator="in" in2="blur-24"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <filter id="Main_Triangle-3" x="-251" y="515" width="503" height="460" filterUnits="userSpaceOnUse">
+                <feOffset input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="30" result="blur-25"/>
+                <feFlood flood-color="#57c5ce" flood-opacity="0.4"/>
+                <feComposite operator="in" in2="blur-25"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <filter id="Main_Triangle-4" x="1035" y="-90" width="503" height="460" filterUnits="userSpaceOnUse">
+                <feOffset input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="30" result="blur-26"/>
+                <feFlood flood-color="#57c5ce" flood-opacity="0.4"/>
+                <feComposite operator="in" in2="blur-26"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <filter id="Main_Triangle-5" x="-251" y="-172" width="503" height="460" filterUnits="userSpaceOnUse">
+                <feOffset input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="30" result="blur-27"/>
+                <feFlood flood-color="#57c5ce" flood-opacity="0.4"/>
+                <feComposite operator="in" in2="blur-27"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <filter id="Path_26" x="-101" y="879" width="826" height="740" filterUnits="userSpaceOnUse">
+                <feOffset input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="30" result="blur-28"/>
+                <feFlood flood-color="#fffef8" flood-opacity="0.451"/>
+                <feComposite operator="in" in2="blur-28"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <filter id="Path_28" x="547.5" y="878" width="826" height="740" filterUnits="userSpaceOnUse">
+                <feOffset input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="30" result="blur-29"/>
+                <feFlood flood-color="#fffef8" flood-opacity="0.451"/>
+                <feComposite operator="in" in2="blur-29"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <filter id="Path_21" x="1520" y="878" width="826" height="740" filterUnits="userSpaceOnUse">
+                <feOffset input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="30" result="blur-30"/>
+                <feFlood flood-color="#fffef8" flood-opacity="0.451"/>
+                <feComposite operator="in" in2="blur-30"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+              <clipPath id="clip-Web_1920_Preloader">
+                <rect width="1920" height="1080"/>
+              </clipPath>
+            </defs>
+            <g id="Web_1920_Preloader" data-name="Web 1920_Preloader" clip-path="url(#clip-Web_1920_Preloader)">
+              <rect width="1920" height="1080" fill="url(#radial-gradient)"/>
+              <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Main_Triangle)">
+                <g data-aos="preload" data-aos-duration="100" data-aos-delay="200" id="Main_Triangle-6" data-name="Main_Triangle" transform="translate(799 406)" fill="none">
+                  <path d="M161.5,0,323,280H0L81.274,139.091Z" stroke="none"/>
+                  <path d="M 161.5 122.0896148681641 L 105.6034698486328 219 L 217.3965301513672 219 L 161.5 122.0896148681641 M 161.5 0 L 323 280 L 0 280 C 0 280 40.8994140625 209.0907897949219 81.27439880371094 139.0908966064453 C 121.6493988037109 69.09080505371094 161.5 0 161.5 0 Z" stroke="none" fill="#55d5d9"/>
+                </g>
+              </g>
+              <g id="Line">
+                <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Line_1)">
+                  <line data-aos="preload" data-aos-duration="100" data-aos-delay="250" id="Line_1-3" data-name="Line 1" y2="1300" transform="translate(774.75 -23) rotate(30)" fill="none" stroke="#55d5d9" stroke-width="6"/>
+                </g>
+                <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Line_2)">
+                  <line data-aos="preload" data-aos-duration="100" data-aos-delay="350" id="Line_2-3" data-name="Line 2" y1="1300" transform="translate(774.75 1102.83) rotate(150)" fill="none" stroke="#55d5d9" stroke-width="6"/>
+                </g>
+                <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Line_5)">
+                  <line data-aos="preload" data-aos-duration="100" data-aos-delay="400" id="Line_5-2" data-name="Line 5" y1="1300" transform="translate(650 1118.83) rotate(150)" fill="none" stroke="#55d5d9" stroke-width="6"/>
+                </g>
+                <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Line_1-2)">
+                  <line data-aos="preload" data-aos-duration="100" data-aos-delay="450"id="Line_1-4" data-name="Line 1" y2="1300" transform="translate(1796.25 -22.92) rotate(30)" fill="none" stroke="#55d5d9" stroke-width="6"/>
+                </g>
+                <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Line_2-2)">
+                  <line data-aos="preload" data-aos-duration="100" data-aos-delay="450" id="Line_2-4" data-name="Line 2" y1="1300" transform="translate(1796.25 1102.92) rotate(150)" fill="none" stroke="#55d5d9" stroke-width="6"/>
+                </g>
+                <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Line_6)">
+                  <line data-aos="preload" data-aos-duration="100" data-aos-delay="500" id="Line_6-2" data-name="Line 6" y1="1300" transform="translate(1920 1113.92) rotate(150)" fill="none" stroke="#55d5d9" stroke-width="6"/>
+                </g>
+                <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Line_3)">
+                  <line data-aos="preload" data-aos-duration="100" data-aos-delay="500" id="Line_3-2" data-name="Line 3" y1="1920" transform="translate(1920 130) rotate(90)" fill="none" stroke="#55d5d9" stroke-width="6"/>
+                </g>
+                <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Line_4)">
+                  <line data-aos="preload" data-aos-duration="100" data-aos-delay="500" id="Line_4-2" data-name="Line 4" y1="1920" transform="translate(1920 962) rotate(90)" fill="none" stroke="#55d5d9" stroke-width="6"/>
+                </g>
+              </g>
+              <g id="Group_1" data-name="Group 1">
+                <g data-aos="fade-left" data-aos-duration="200" data-aos-delay="800" transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_4)">
+                  <path id="Path_4-2" data-name="Path 4" d="M161.5,0,323,280H0L81.274,139.091Z" transform="translate(475 406)" fill="#8c7eb7"/>
+                </g>
+                <g data-aos="fade-right" data-aos-duration="200" data-aos-delay="900" transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_11)">
+                  <path id="Path_11-2" data-name="Path 11" d="M161.5,0,0,280H323L241.726,139.091Z" transform="translate(1123 406)" fill="#8c7eb7"/>
+                </g>
+                <g data-aos="fade-down-left" data-aos-duration="200" data-aos-delay="1000" transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_6)">
+                  <path id="Path_6-2" data-name="Path 6" d="M161.5,0,323,280H0L81.274,139.091Z" transform="translate(637 687)" fill="#8c7eb7"/>
+                </g>
+                <g data-aos="fade-down-right" data-aos-duration="200" data-aos-delay="1000" transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_12)">
+                  <path id="Path_12-2" data-name="Path 12" d="M161.5,0,0,280H323L241.726,139.091Z" transform="translate(961 687)" fill="#8c7eb7"/>
+                </g>
+                <g data-aos="fade-up-left" data-aos-duration="200" data-aos-delay="800" transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_9)">
+                  <path id="Path_9-2" data-name="Path 9" d="M161.5,0,323,280H0L81.274,139.091Z" transform="translate(637 125)" fill="#8c7eb7"/>
+                </g>
+                <g data-aos="fade-up-right" data-aos-duration="200" data-aos-delay="900" transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_8)">
+                  <path id="Path_8-2" data-name="Path 8" d="M161.5,0,323,280H0L81.274,139.091Z" transform="translate(961 125)" fill="#8c7eb7"/>
+                </g>
+              </g>
+              <g id="Group_2" data-name="Group 2">
+                <g data-aos="fade-up" data-aos-duration="200" data-aos-delay="1350" transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_14)">
+                  <path id="Path_14-2" data-name="Path 14" d="M161.5,0,323,280H0L81.274,139.091Z" transform="translate(799 -156)" fill="#3955ae"/>
+                </g>
+                <g data-aos="fade-down-left" data-aos-duration="200" data-aos-delay="1350" transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_15)">
+                  <path id="Path_15-2" data-name="Path 15" d="M161.5,0,323,280H0L81.274,139.091Z" transform="translate(313 687)" fill="#3955ae"/>
+                </g>
+                <g data-aos="fade-down-right" data-aos-duration="200" data-aos-delay="1350" transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_16)">
+                  <path id="Path_16-2" data-name="Path 16" d="M161.5,0,323,280H0L81.274,139.091Z" transform="translate(1285 687)" fill="#3955ae"/>
+                </g>
+              </g>
+              <g data-aos="preload" data-aos-duration="100" data-aos-delay="1100" id="Group_4" data-name="Group 4">
+                <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_17)">
+                  <path id="Path_17-2" data-name="Path 17" d="M323,0,646,560H0L162.549,278.182Z" transform="translate(1285 -155)" fill="#fffef8"/>
+                </g>
+                <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_19)">
+                  <path id="Path_19-2" data-name="Path 19" d="M323,0,646,560H0L162.549,278.182Z" transform="translate(1610 407)" fill="#fffef8"/>
+                </g>
+                <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_27)">
+                  <path id="Path_27-2" data-name="Path 27" d="M323,560,646,0H0L162.549,281.818Z" transform="translate(314 968)" fill="#fffef8"/>
+                </g>
+                <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_23)">
+                  <path id="Path_23-2" data-name="Path 23" d="M323,560,646,0H0L162.549,281.818Z" transform="translate(-11 406)" fill="#fffef8"/>
+                </g>
+                <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_24)">
+                  <path id="Path_24-2" data-name="Path 24" d="M323,560,646,0H0L162.549,281.818Z" transform="translate(313.5 -156)" fill="#fffef8"/>
+                </g>
+              </g>
+              <g id="Group_5" data-name="Group 5">
+                <g data-aos="preload" data-aos-duration="100" data-aos-delay="1500" transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Main_Triangle-2)">
+                  <path id="Main_Triangle-7" data-name="Main_Triangle" d="M161.5,280,323,0H0L81.274,140.909Z" transform="translate(1123 1063)" fill="#55d5d9"/>
+                </g>
+                <g data-aos="preload" data-aos-duration="200" data-aos-delay="1600" transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Main_Triangle-3)">
+                  <path id="Main_Triangle-8" data-name="Main_Triangle" d="M161.5,0,323,280H0L81.274,139.091Z" transform="translate(-161 605)" fill="#55d5d9"/>
+                </g>
+                <g data-aos="preload" data-aos-duration="200" data-aos-delay="1800" transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Main_Triangle-4)">
+                  <path id="Main_Triangle-9" data-name="Main_Triangle" d="M161.5,280,323,0H0L81.274,140.909Z" transform="translate(1125)" fill="#55d5d9"/>
+                </g>
+                <g data-aos="preload" data-aos-duration="200" data-aos-delay="1800" transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Main_Triangle-5)">
+                  <path id="Main_Triangle-10" data-name="Main_Triangle" d="M161.5,280,323,0H0L81.274,140.909Z" transform="translate(-161 -82)" fill="#55d5d9"/>
+                </g>
+              </g>
+              <g data-aos="preload" data-aos-duration="200" data-aos-delay="1300" id="Group_6" data-name="Group 6">
+                <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_26)">
+                  <path id="Path_26-2" data-name="Path 26" d="M323,0,646,560H0L162.549,278.182Z" transform="translate(-11 969)" fill="#fffef8"/>
+                </g>
+                <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_28)">
+                  <path id="Path_28-2" data-name="Path 28" d="M323,0,646,560H0L162.549,278.182Z" transform="translate(637.5 968)" fill="#fffef8"/>
+                </g>
+                <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_21)">
+                  <path id="Path_21-2" data-name="Path 21" d="M323,560,646,0H0L162.549,281.818Z" transform="translate(1610 968)" fill="#fffef8"/>
+                </g>
+              </g>
+            </g>
+          </svg>          
+    </div>
+    <!------- Page Indicator ------->
+
+    <!------- Pages ------->
+    <div class="page" id="page1">
+        <div class="bg-img">
+        </div>
+        <div class="cage1">
+            <div class="left-cosmetic">
+                <div class="square_up"></div>
+                <div class="line_1"></div>
+                <div class="square_down"></div>
+            </div>
+            <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="3000" class="line_2"></div>
+            <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="2900" class="separator1">
+                <img class="logo1" src="img/Pointer.png" style="scale: 80%;">
+            </div>
+            <div class="container_page1">
+              <div class="content1">
+                <div class="title1">
+                    <p data-aos="fade-right" data-aos-duration="500" data-aos-delay="2900" class="title1_1">Water-Jet Cutting</p>
+                    <h2 data-aos="fade-right" data-aos-duration="500" data-aos-delay="2900" class="title1_2">Advanced Machining</h2>    
+                </div>
+                <div data-aos="fade-right" data-aos-duration="500" data-aos-delay="3000" class="subtitle1">
+                  <div class="subtitle1_1">
+                    <h2 style="font-size: 35px;"> Presented by Group 1 - 3G TMPP</h2>
+                  </div>
+                </div>
+                <div data-aos="fade-right" data-aos-duration="500" data-aos-delay="3000" class="disclaimer">
+                  <div class="triangle1">
+                    <img src="img/Disclaimer@2x.png" height="72.5px" width="83px">                  
+                  </div>
+                  <p class="disclaim_txt">"Disclaimer: Our website content is derived solely from the information contained in a PPT presentation, which has been compiled from various credible sources. While we strive for accuracy, we advise users to independently verify the information provided."</p>
+                </div>
+              </div>
+              <div class="loading-bar">
+                <img class="bar" src="img/Bar1.png">
+                <img class="bar1" src="img/Bar1.png">
+                <img class="bar2" src="img/Bar1.png">
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" id="page2">
+        <div class="cage2">
+          <div class="svg-container1"></div>
+          <div class="content2_1">
+            <h1 style="font-size: 100px; letter-spacing: 10px;" >&#x25B6 OUR TEAM &#x25C0</h1>
+          </div>
+          <div class="content2_2"></div>
+        </div>>
+    </div>
+    <div class="page" id="page3">
+        <h1>Page 3</h1>
+    </div>
+    <div class="page" id="page4">
+        <h1>Page 4</h1>
+    </div>
+    <!------- Scripts ------->
+    <script src="water_jet.js"></script>
+    <script src="aos-master/aos-master/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
